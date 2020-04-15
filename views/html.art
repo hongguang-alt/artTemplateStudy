@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <span>{{data.name}}</span>
+        <span>{{data.age}}</span>
+        <span>{{@data.content}}<span>
+        <span><%-data.content%></span>
+        {{if data.age>18}}
+            <span>年龄大于十八<span>
+        {{ else if data.age==18 }}
+            <span>年龄等于十八<span>
+        {{ else }}
+            <span>年龄小于十八</span>
+        {{ /if }}
+
+        <%if(data.age>18){%>  
+            <span>年龄大于十八<span>
+        <%}else if(data.age==18){%>
+            <span>年龄等于十八<span>
+        <%}else{%>
+            <span>年龄小于十八</span>
+        <%}%>
+    </div>
+</body>
+</html>

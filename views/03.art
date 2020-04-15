@@ -1,0 +1,1 @@
+<span>{{dateformat(time,'yyyy-mm-dd')}}</span>
